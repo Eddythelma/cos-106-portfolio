@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner - Academic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Task Manager Section -->
+    <section>
+        <h1>Academic Planner</h1>
+        <p>Manage your coursework and project deadlines below.</p>
+        
+        <!-- Input area for new tasks -->
+        <div>
+            <input type="text" id="taskInput" placeholder="Enter a new academic task...">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- The empty list where JavaScript will inject your tasks later -->
+        <ul id="taskList">
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

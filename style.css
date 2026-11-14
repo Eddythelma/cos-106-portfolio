@@ -1,0 +1,172 @@
+/* Import modern fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap');
+
+/* Global Reset & Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Very soft off-white background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant, professional serif for headings */
+    color: #111;
+    margin-bottom: 15px;
+}
+
+/* Sleek, Sticky Navigation Bar */
+nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Extremely subtle shadow for depth */
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+nav li {
+    padding: 20px 25px;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Main Content Cards - Eliminating the "Flat" Look */
+header, section {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04); /* Deep, soft shadow for elevation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover, section:hover {
+    transform: translateY(-5px); /* Lifts the card slightly when hovered */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Image Styling */
+img {
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Professional Table Styling (About Page) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #111;
+}
+
+/* Form Layout (Planner & Contact Pages) */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: #fcfcfc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+/* Modern Pill-Shaped Buttons */
+button {
+    background-color: #111;
+    color: #ffffff;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Planner Task List Styling */
+ul#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#taskList li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        padding: 12px;
+    }
+    header, section {
+        margin: 20px;
+        padding: 30px;
+    }
+}
